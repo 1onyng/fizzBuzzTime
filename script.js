@@ -76,5 +76,10 @@ function getShowTime() {
   minutes = (minutes < 10) ? "0" + minutes : minutes;
   seconds = (seconds < 10) ? "0" + seconds : seconds;
 
-  timerDisplay.innerHTML = hours + ':' + minutes + ':' + seconds;
+  if (hours === 9 && minutes === 59 && seconds === 59) {
+    resetTimer();
+  }
+  else {
+    timerDisplay.innerHTML = hours + ':' + minutes + ':' + seconds;
+  }
 }

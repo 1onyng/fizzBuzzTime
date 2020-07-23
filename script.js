@@ -18,10 +18,10 @@ function startTimer() {
     // timerDisplay.style.background = "#FF0000";
     // timerDisplay.style.cursor = "auto";
     // timerDisplay.style.color = "yellow";
-    startTimerButton.classList.add('lighter');
-    pauseTimerButton.classList.remove('lighter');
-    startTimerButton.style.cursor = "auto";
-    pauseTimerButton.style.cursor = "pointer";
+    // startTimerButton.classList.add('lighter');
+    // pauseTimerButton.classList.remove('lighter');
+    // startTimerButton.style.cursor = "auto";
+    // pauseTimerButton.style.cursor = "pointer";
   }
 }
 function pauseTimer() {
@@ -51,14 +51,14 @@ function resetTimer() {
   difference = 0;
   paused = false;
   running = false;
-  timerDisplay.innerHTML = '00:00:00';
+  timerDisplay.innerHTML = '0:00:00';
   // timerDisplay.style.background = "#A90000";
   // timerDisplay.style.color = "#fff";
   // timerDisplay.style.cursor = "pointer";
-  startTimerButton.classList.remove('lighter');
-  pauseTimerButton.classList.remove('lighter');
-  startTimerButton.style.cursor = "pointer";
-  pauseTimerButton.style.cursor = "auto";
+  // startTimerButton.classList.remove('lighter');
+  // pauseTimerButton.classList.remove('lighter');
+  // startTimerButton.style.cursor = "pointer";
+  // pauseTimerButton.style.cursor = "auto";
 }
 
 function getShowTime() {

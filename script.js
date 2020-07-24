@@ -38,11 +38,11 @@ function fizzBuzz(hr, min, sec) {
   let hrSec = hr * 60 * 60;
   let totalSec = minSec + hrSec + sec; 
 
-  if (totalSec % 2 == 0 && totalSec % 3 == 0) {
+  if (totalSec % 3 == 0 && totalSec % 4 == 0) {
     fizzBuzzDisplay.innerHTML = "FizzBuzz";
-  } else if (totalSec % 2 == 0) {
-    fizzBuzzDisplay.innerHTML = "Fizz";
   } else if (totalSec % 3 == 0) {
+    fizzBuzzDisplay.innerHTML = "Fizz";
+  } else if (totalSec % 4 == 0) {
     fizzBuzzDisplay.innerHTML = "Buzz";
   } 
 }

@@ -1,15 +1,14 @@
-html, body {
-  height: 100%;
-}
-
 .timerContainer {
   font-family: Arial;
   color: #707070;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* text-align: center; */
+  display: grid;
+  place-items: center;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .headerTimer {
@@ -26,7 +25,6 @@ html, body {
   background-color: #F5F5F5; 
   padding: 28px;
   margin-bottom: 50px;
-  /* display:inline-block; */
 }
 
 .startTimer{

@@ -10,7 +10,7 @@ var paused = false;
 var running = false;
 
 function changePage() {
-  if (window.location.pathname === "/Users/tonyng/Desktop/fizzbuzztime/index.html") {
+  if (window.location.href === "https://1onyng.github.io/fizzBuzzTime/index.html") {
     window.location.href = "timer.html";
   } else {
     window.location.href = "index.html"

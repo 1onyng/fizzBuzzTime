@@ -1,6 +1,15 @@
-#timerContainer {
+html, body {
+  height: 100%;
+}
+
+.timerContainer {
   font-family: Arial;
   color: #707070;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
 }
 
 .headerTimer {
@@ -16,12 +25,13 @@
   width: 640px; 
   background-color: #F5F5F5; 
   padding: 28px;
-  cursor: pointer;
   margin-bottom: 50px;
+  /* display:inline-block; */
 }
 
 .startTimer{
   background-color: #5CCC87;
+  margin-right: 30px;
 }
 
 .pauseTimer{
@@ -37,5 +47,6 @@
   text-align: center; 
   font-size: 16px; 
   font-weight: bold; 
+  display: inline-block;
   cursor: pointer;
 }

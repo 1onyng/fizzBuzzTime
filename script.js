@@ -9,6 +9,14 @@ var savedTime;
 var paused = false;
 var running = false;
 
+function changePage() {
+  if (window.location.pathname === "/Users/tonyng/Desktop/fizzbuzztime/input.html") {
+    window.location.href = "timer.html";
+  } else {
+    window.location.href = "input.html"
+  }
+} 
+
 function startTimer() {
   if (!running) {
     startTime = new Date().getTime();

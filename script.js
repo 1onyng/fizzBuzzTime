@@ -10,10 +10,10 @@ var paused = false;
 var running = false;
 
 function changePage() {
-  if (window.location.pathname === "/Users/tonyng/Desktop/fizzbuzztime/input.html") {
+  if (window.location.pathname === "/Users/tonyng/Desktop/fizzbuzztime/index.html") {
     window.location.href = "timer.html";
   } else {
-    window.location.href = "input.html"
+    window.location.href = "index.html"
   }
 } 
 

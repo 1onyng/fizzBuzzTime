@@ -1,6 +1,9 @@
+var fizz;
+var buzz;
 var startTimerButton = document.querySelector('.startTimer');
 var pauseTimerButton = document.querySelector('.pauseTimer');
 var timerDisplay = document.querySelector('.timer');
+var fizzBuzzDisplay = document.querySelector('.fizzBuzz');
 var startTime;
 var updatedTime;
 var difference;
@@ -9,13 +12,40 @@ var savedTime;
 var paused = false;
 var running = false;
 
+// function changePage() {
+//   if (window.location.href === "https://1onyng.github.io/fizzBuzzTime/index.html") {
+//     window.location.href = "timer.html";
+//     fizz = document.getElementById("fizz").value;
+//     buzz = document.getElementById("buzz").value;
+//   } else {
+//     window.location.href = "index.html"
+//   }
+// } 
+
 function changePage() {
-  if (window.location.href === "https://1onyng.github.io/fizzBuzzTime/index.html") {
+  if (window.location.pathname === "/Users/tonyng/Desktop/fizzbuzztime/index.html") {
+    fizz = document.getElementById("fizz").value;
+    buzz = document.getElementById("buzz").value;
     window.location.href = "timer.html";
+    debugger;
   } else {
     window.location.href = "index.html"
   }
 } 
+
+function fizzBuzz(hr, min, sec) {
+  let minSec = min * 60;
+  let hrSec = hr * 60 * 60;
+  let totalSec = minSec + hrSec + sec; 
+
+  if (totalSec % 2 == 0 && totalSec % 3 == 0) {
+    fizzBuzzDisplay.innerHTML = "FizzBuzz";
+  } else if (totalSec % 2 == 0) {
+    fizzBuzzDisplay.innerHTML = "Fizz";
+  } else if (totalSec % 3 == 0) {
+    fizzBuzzDisplay.innerHTML = "Buzz";
+  } 
+}
 
 function startTimer() {
   if (!running) {
@@ -46,6 +76,7 @@ function resetTimer() {
   paused = false;
   running = false;
   timerDisplay.innerHTML = '0:00:00';
+  fizzBuzzDisplay.innerHTML = '';
 }
 
 function getShowTime() {
@@ -67,5 +98,6 @@ function getShowTime() {
   }
   else {
     timerDisplay.innerHTML = hours + ':' + minutes + ':' + seconds;
+    fizzBuzz(hours, minutes, seconds);
   }
 }

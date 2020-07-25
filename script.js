@@ -22,8 +22,6 @@ var running = false;
 
 function changePage() {
   if (window.location.pathname === "/Users/tonyng/Desktop/fizzbuzztime/index.html") {
-    // var fizz = document.getElementById("fizz").value;
-    // var buzz = document.getElementById("buzz").value;
     sessionStorage.setItem("fizz", document.getElementById("fizz").value);
     sessionStorage.setItem("buzz", document.getElementById("buzz").value);
     window.location.href = "timer.html";

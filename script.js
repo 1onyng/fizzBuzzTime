@@ -101,6 +101,7 @@ function getShowTime() {
 
   if (hours === 9 && minutes === 59 && seconds === 59) {
     resetTimer();
+    alert("Timer has expired.");
   }
   else {
     timerDisplay.innerHTML = hours + ':' + minutes + ':' + seconds;

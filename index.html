@@ -7,13 +7,17 @@
 </head>
 
 <body>
-  <div class="headerTimer">Please enter a fizz and buzz in seconds. 
-    <strong>Values should be 2 to 10, inclusive.</strong>
+  <div class="indexContainer">
+    <div class="headerIndex">Please enter a fizz and buzz in seconds. 
+      <strong>Values should be 2 to 10, inclusive.</strong>
+    </div>
+    <span>Fizz:</span> 
+    <input class="inputBox" id="fizz">
+    <span>Buzz:</span>
+    <input class="inputBox" id="buzz"><br>
+    <input class="navButton" type="button" value="Go to Timer >" onclick="changePage()" />
+    <script type="text/javascript" src="script.js"></script>
   </div>
-  Fizz: <input id="fizz">
-  Buzz: <input id="buzz"><br>
-  <input class="navButton" type="button" value="Go to Timer >" onclick="changePage()" />
-  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

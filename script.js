@@ -12,9 +12,9 @@ var running = false;
 
 // function changePage() {
 //   if (window.location.href === "https://1onyng.github.io/fizzBuzzTime/index.html") {
+//     sessionStorage.setItem("fizz", document.getElementById("fizz").value);
+//     sessionStorage.setItem("buzz", document.getElementById("buzz").value);
 //     window.location.href = "timer.html";
-//     fizz = document.getElementById("fizz").value;
-//     buzz = document.getElementById("buzz").value;
 //   } else {
 //     window.location.href = "index.html"
 //   }
@@ -63,7 +63,6 @@ function pauseTimer() {
     paused = true;
     running = false;
   } else {
-    // if the timer was already paused, when they click pause again, start the timer again
     resetTimer();
   }
 }

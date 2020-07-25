@@ -1,5 +1,3 @@
-var fizz;
-var buzz;
 var startTimerButton = document.querySelector('.startTimer');
 var pauseTimerButton = document.querySelector('.pauseTimer');
 var timerDisplay = document.querySelector('.timer');
@@ -24,10 +22,11 @@ var running = false;
 
 function changePage() {
   if (window.location.pathname === "/Users/tonyng/Desktop/fizzbuzztime/index.html") {
-    fizz = document.getElementById("fizz").value;
-    buzz = document.getElementById("buzz").value;
+    // var fizz = document.getElementById("fizz").value;
+    // var buzz = document.getElementById("buzz").value;
+    sessionStorage.setItem("fizz", document.getElementById("fizz").value);
+    sessionStorage.setItem("buzz", document.getElementById("buzz").value);
     window.location.href = "timer.html";
-    debugger;
   } else {
     window.location.href = "index.html"
   }
@@ -36,13 +35,15 @@ function changePage() {
 function fizzBuzz(hr, min, sec) {
   let minSec = min * 60;
   let hrSec = hr * 60 * 60;
-  let totalSec = minSec + hrSec + sec; 
+  let totalSec = minSec + hrSec + sec;
+  var fizz = sessionStorage.getItem("fizz");
+  var buzz = sessionStorage.getItem("buzz");
 
-  if (totalSec % 3 == 0 && totalSec % 4 == 0) {
+  if (totalSec % fizz == 0 && totalSec % buzz == 0) {
     fizzBuzzDisplay.innerHTML = "FizzBuzz";
-  } else if (totalSec % 3 == 0) {
+  } else if (totalSec % fizz == 0) {
     fizzBuzzDisplay.innerHTML = "Fizz";
-  } else if (totalSec % 4 == 0) {
+  } else if (totalSec % buzz == 0) {
     fizzBuzzDisplay.innerHTML = "Buzz";
   } 
 }

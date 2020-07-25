@@ -22,9 +22,17 @@ var running = false;
 
 function changePage() {
   if (window.location.pathname === "/Users/tonyng/Desktop/fizzbuzztime/index.html") {
-    sessionStorage.setItem("fizz", document.getElementById("fizz").value);
-    sessionStorage.setItem("buzz", document.getElementById("buzz").value);
-    window.location.href = "timer.html";
+    var fizz = document.getElementById("fizz").value;
+    var buzz = document.getElementById("buzz").value;
+    if (isNaN(fizz) || isNaN(buzz)) {
+      alert("Fizz and Buzz need to be a number. Please try again.");
+    } else if (fizz < 2 || fizz > 10 || buzz < 2 || buzz > 10) {
+      alert("Fizz and Buzz need to be within the prescribed range. Please try again.")
+    } else {
+      sessionStorage.setItem("fizz", fizz);
+      sessionStorage.setItem("buzz", buzz);
+      window.location.href = "timer.html";
+    }
   } else {
     window.location.href = "index.html"
   }

@@ -51,7 +51,9 @@ function fizzBuzz(hr, min, sec) {
     fizzBuzzDisplay.innerHTML = "fizz";
   } else if (totalSec % buzz == 0) {
     fizzBuzzDisplay.innerHTML = "buzz";
-  } 
+  } else {
+    fizzBuzzDisplay.innerHTML = "";
+  }
 }
 
 function startTimer() {

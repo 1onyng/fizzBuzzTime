@@ -46,11 +46,11 @@ function fizzBuzz(hr, min, sec) {
   var buzz = sessionStorage.getItem("buzz");
 
   if (totalSec % fizz == 0 && totalSec % buzz == 0) {
-    fizzBuzzDisplay.innerHTML = "FizzBuzz";
+    fizzBuzzDisplay.innerHTML = "fizzbuzz";
   } else if (totalSec % fizz == 0) {
-    fizzBuzzDisplay.innerHTML = "Fizz";
+    fizzBuzzDisplay.innerHTML = "fizz";
   } else if (totalSec % buzz == 0) {
-    fizzBuzzDisplay.innerHTML = "Buzz";
+    fizzBuzzDisplay.innerHTML = "buzz";
   } 
 }
 

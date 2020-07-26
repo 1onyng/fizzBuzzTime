@@ -9,7 +9,7 @@ let tInterval;
 let savedTime; 
 
 function changePage() {
-  if (window.location.pathname === "/https://1onyng.github.io/fizzBuzzTime/index.html") {
+  if (window.location.href === "/https://1onyng.github.io/fizzBuzzTime/index.html") {
     //window.location.pathname === "/Users/tonyng/Desktop/fizzbuzztime/index.html" for local testing
     let fizz = document.getElementById("fizz").value;
     let buzz = document.getElementById("buzz").value;

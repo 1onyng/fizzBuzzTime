@@ -8,26 +8,9 @@ let diffTime;
 let tInterval;
 let savedTime; 
 
-// function changePage() {
-//   if (window.location.pathname === "/https://1onyng.github.io/fizzBuzzTime/index.html") {
-//     let fizz = document.getElementById("fizz").value;
-//     let buzz = document.getElementById("buzz").value;
-//     if (isNaN(fizz) || isNaN(buzz)) {
-//       alert("Fizz and Buzz need to be a number. Please try again.");
-//     } else if (fizz < 2 || fizz > 10 || buzz < 2 || buzz > 10) {
-//       alert("Fizz and Buzz need to be within the prescribed range. Please try again.")
-//     } else {
-//       sessionStorage.setItem("fizz", fizz);
-//       sessionStorage.setItem("buzz", buzz);
-//       window.location.href = "timer.html";
-//     }
-//   } else {
-//     window.location.href = "index.html"
-//   }
-// } 
-
 function changePage() {
-  if (window.location.pathname === "/Users/tonyng/Desktop/fizzbuzztime/index.html") {
+  if (window.location.pathname === "/https://1onyng.github.io/fizzBuzzTime/index.html") {
+    //window.location.pathname === "/Users/tonyng/Desktop/fizzbuzztime/index.html" for local testing
     let fizz = document.getElementById("fizz").value;
     let buzz = document.getElementById("buzz").value;
     if (isNaN(fizz) || isNaN(buzz)) {

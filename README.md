@@ -1,4 +1,4 @@
-# [Fizz Buzz Time](https://https://1onyng.github.io/fizzBuzzTime/index.html)
+# [Fizz Buzz Time](https://1onyng.github.io/fizzBuzzTime/index.html)
 
 ## Technologies
  

@@ -35,3 +35,8 @@ User input data "fizz" and "buzz" needed to be accessed by the fizzBuzz function
     let buzz = sessionStorage.getItem("buzz");
 ```
 
+## Acknowledgements
+
+* Jamie Uttariello's vanilla JS stopwatch
+
+
